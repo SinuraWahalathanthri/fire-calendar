@@ -1,0 +1,19 @@
+{
+  "name": "harmonized-fire-calendar",
+  "version": "2.0.0",
+  "description": "Harmonized MODIS + VIIRS burning activity calendar (NASA FIRMS) with Sri Lanka focus and global analysis",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "npm --prefix web install && npm --prefix web run build",
+    "dev": "node server/index.js",
+    "dev:web": "npm --prefix web run dev",
+    "typecheck": "npm --prefix web run typecheck",
+    "test": "node --test tests/*.test.js",
+    "import": "node scripts/import-archive.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
